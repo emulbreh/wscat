@@ -1,0 +1,14 @@
+hash: e4306e1176b983a321e73aa03ec0e7f0100127fd0280cc61a389dc6a6fd52efb
+updated: 2016-03-13T23:41:53.334793505+01:00
+imports:
+- name: github.com/alecthomas/template
+  version: 14fd436dd20c3cc65242a9f396b61bfc8a3926fc
+  subpackages:
+  - parse
+- name: github.com/alecthomas/units
+  version: 2efee857e7cfd4f3d0138cc3cbb1b4966962b93a
+- name: github.com/gorilla/websocket
+  version: e2e3d8414d0fbae04004f151979f4e27c6747fe7
+- name: gopkg.in/alecthomas/kingpin.v2
+  version: 8cccfa8eb2e3183254457fb1749b2667fbc364c7
+devImports: []
