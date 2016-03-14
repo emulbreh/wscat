@@ -14,6 +14,7 @@ import (
 var (
 	url          = kingpin.Arg("url", "websocket url").Required().URL()
 	extraHeaders = kingpin.Flag("header", "HTTP header").Short('H').Strings()
+	oneOnly      = kingpin.Flag("one", "read only one message").Short('1').Bool()
 )
 
 func fail(msg string, o ...interface{}) {
@@ -56,6 +57,9 @@ func main() {
 				break
 			}
 			fmt.Println(string(message))
+			if *oneOnly {
+				break
+			}
 		}
 		doneReading <- true
 	}()
